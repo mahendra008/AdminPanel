@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML5 CSS3 And Javascript Admin Panel Ttmplate</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
     <link href="./style.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <!-- Left Section -->
-    <section id="left">
+    <section id="left" class="active">
         <div class="logo">
             <img src="./images/jio_logo.png" alt="JIO">
             <h2>CNAAP</h2>
@@ -61,7 +61,7 @@
     <section id="right">
         <div class="header">
             <div class="n1">
-                <i class="fa-solid fa-bars"></i>
+                <i id="menubtn" class="fa-solid fa-bars"></i>
                 <div class="search">
                     <i class="fa fa-search"></i>
                     <input type="text" name="search" placeholder="Search">
@@ -69,10 +69,218 @@
             </div>
             <div class="profile">
                 <i class="fa-regular fa-bell"></i>
-                <img src="./images/user.png" alt="user" class="img">
+                <img src="./images/user.jpg" alt="user" class="img">
             </div>
         </div>
-    </section>
 
+        <h3 class="title">Dashboard</h3>
+        <div class="dashcard">
+            <div class="val">
+                <i class="fas fa-user"></i>
+                <div>
+                    <h3>18,560</h3>
+                    <span>QA Submit</span>
+                </div>
+            </div>
+            <div class="val">
+                <i class="fa-solid fa-champagne-glasses"></i>
+                <div>
+                    <h3>15,560</h3>
+                    <span>QA Approve</span>
+                </div>
+            </div>
+            <div class="val">
+                <i class="fa-solid fa-tree"></i>
+                <div>
+                    <h3>5,850</h3>
+                    <span>HOTO Submit</span>
+                </div>
+            </div>
+            <div class="val">
+                <i class="fa-solid fa-shield-virus"></i>
+                <div>
+                    <h3>8,900</h3>
+                    <span>HOTOED</span>
+                </div>
+            </div>
+        </div>
+        <div class="grid">
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <td>
+                            <div class="tableheader">
+                                <div>ID</div>
+                                <div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="tableheader">
+                                <div>NE-ID</div>
+                                <div>
+                                    <i class="fa-solid fa-bars"></i>
+                                    <div class="filter">
+                                        <input type="text" name="filter" id="">
+                                        <button>Apply</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="tableheader">
+                                <div>SAP-ID</div>
+                                <div>
+                                    <i class="fa-solid fa-bars"></i>
+                                    <div class="filter">
+                                        <input type="text" name="filter" id="">
+                                        <button>Apply</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        
+                        <td>
+                            <div class="tableheader">
+                                <div>hostname</div>
+                                <div>
+                                    <i class="fa-solid fa-bars"></i>
+                                    <div class="filter">
+                                        <input type="text" name="filter" id="">
+                                        <button>Apply</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="tableheader">
+                                <div>ipv4</div>
+                                <div>
+                                    <i class="fa-solid fa-bars"></i>
+                                    <div class="filter">
+                                        <input type="text" name="filter" id="">
+                                        <button>Apply</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="tableheader">
+                                <div>ipv6</div>
+                                <div>
+                                    <i class="fa-solid fa-bars"></i>
+                                    <div class="filter">
+                                        <input type="text" name="filter" id="">
+                                        <button>Apply</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>INAPMUXXXX00MUWDWDASA1</td>
+                        <td>I-AP-AMS0011</td>
+                        <td>MUWDWDASA008</td>
+                        <td>172.140.130.1</td>
+                        <td>fdd8:a7cf:1953:f108::/64</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>INAPMUXXXX00MUWDWDASA1</td>
+                        <td>I-AP-AMS0011</td>
+                        <td>MUWDWDASA008</td>
+                        <td>172.140.130.1</td>
+                        <td>fdd8:a7cf:1953:f108::/64</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>INAPMUXXXX00MUWDWDASA1</td>
+                        <td>I-AP-AMS0011</td>
+                        <td>MUWDWDASA008</td>
+                        <td>172.140.130.1</td>
+                        <td>fdd8:a7cf:1953:f108::/64</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>INAPMUXXXX00MUWDWDASA1</td>
+                        <td>I-AP-AMS0011</td>
+                        <td>MUWDWDASA008</td>
+                        <td>172.140.130.1</td>
+                        <td>fdd8:a7cf:1953:f108::/64</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>INAPMUXXXX00MUWDWDASA1</td>
+                        <td>I-AP-AMS0011</td>
+                        <td>MUWDWDASA008</td>
+                        <td>172.140.130.1</td>
+                        <td>fdd8:a7cf:1953:f108::/64</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>INAPMUXXXX00MUWDWDASA1</td>
+                        <td>I-AP-AMS0011</td>
+                        <td>MUWDWDASA008</td>
+                        <td>172.140.130.1</td>
+                        <td>fdd8:a7cf:1953:f108::/64</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>INAPMUXXXX00MUWDWDASA1</td>
+                        <td>I-AP-AMS0011</td>
+                        <td>MUWDWDASA008</td>
+                        <td>172.140.130.1</td>
+                        <td>fdd8:a7cf:1953:f108::/64</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>INAPMUXXXX00MUWDWDASA1</td>
+                        <td>I-AP-AMS0011</td>
+                        <td>MUWDWDASA008</td>
+                        <td>172.140.130.1</td>
+                        <td>fdd8:a7cf:1953:f108::/64</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>INAPMUXXXX00MUWDWDASA1</td>
+                        <td>I-AP-AMS0011</td>
+                        <td>MUWDWDASA008</td>
+                        <td>172.140.130.1</td>
+                        <td>fdd8:a7cf:1953:f108::/64</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>INAPMUXXXX00MUWDWDASA1</td>
+                        <td>I-AP-AMS0011</td>
+                        <td>MUWDWDASA008</td>
+                        <td>172.140.130.1</td>
+                        <td>fdd8:a7cf:1953:f108::/64</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>INAPMUXXXX00MUWDWDASA1</td>
+                        <td>I-AP-AMS0011</td>
+                        <td>MUWDWDASA008</td>
+                        <td>172.140.130.1</td>
+                        <td>fdd8:a7cf:1953:f108::/64</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+<script type="text/javascript">
+    $('#menubtn').click(function(){
+        $('#left').toggleClass('active');
+    })
+
+    $('.tableheader i').on("click", function(){
+        console.log($(this).next('.filter'));
+        $(this).next('.filter').toggle();
+    }); 
+
+</script>
 </body>
 </html>
